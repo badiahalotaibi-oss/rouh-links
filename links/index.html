@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حَلاوة رُوح | روابطنا</title>
+<meta name="description" content="حَلاوة رُوح في مكة المكرمة، الشرائع الخضراء: المنيو، موقعنا على الخريطة، واتساب، وحساباتنا على انستقرام وتيك توك وسناب شات.">
+<meta name="theme-color" content="#1A2538">
+<meta property="og:title" content="حَلاوة رُوح">
+<meta property="og:description" content="المنيو، موقعنا، واتساب، وحساباتنا في مكان واحد.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:,">
+<link rel="preload" href="../assets/fonts/ManchetteFine-Bold.otf" as="font" type="font/otf" crossorigin>
+<style>
+html,body{background:#1A2538;color:#FAF5F0}
+
+@font-face{font-family:"Manchette";src:url("../assets/fonts/ManchetteFine-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Manchette";src:url("../assets/fonts/ManchetteFine-Bold.otf") format("opentype");font-weight:700;font-display:swap}
+@font-face{font-family:"Camel";src:url("../assets/fonts/TheYearofTheCamel-Regular.otf") format("opentype");font-weight:400;font-display:swap}
+
+:root{
+  --navy:#1A2538;
+  --navy-shade:#111827;
+  --purity:#FAF5F0;
+  --insp:#8CA0AA;
+  --fg:250 245 240;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ar:"Manchette","Camel","Geeza Pro","Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;
+  --en:"Camel","Manchette",Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;min-height:100dvh;font-family:var(--ar);line-height:1.7;overflow-x:clip;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  background:radial-gradient(90% 55% at 50% 0%,rgba(250,245,240,.10) 0%,rgba(250,245,240,0) 70%),
+             linear-gradient(180deg,var(--navy) 0%,var(--navy-shade) 100%) fixed}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--insp);outline-offset:3px;border-radius:14px}
+::selection{background:rgba(140,160,170,.45)}
+
+/* the botanical pattern, faded from the top */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.06;
+  background:url("../assets/img/botanical-tile-purity.svg") center top/200px auto repeat;
+  -webkit-mask-image:radial-gradient(120% 70% at 50% 0%,#000 0%,rgba(0,0,0,.45) 50%,transparent 85%);
+  mask-image:radial-gradient(120% 70% at 50% 0%,#000 0%,rgba(0,0,0,.45) 50%,transparent 85%)}
+/* film grain */
+body::after{content:"";position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+.page{position:relative;z-index:1;width:min(440px,100%);margin:0 auto;
+  padding:calc(44px + env(safe-area-inset-top)) 22px calc(34px + env(safe-area-inset-bottom));
+  display:flex;flex-direction:column;align-items:center;min-height:100vh;min-height:100dvh}
+
+.logo{height:132px;width:auto}
+.lead{margin:18px 0 0;font-size:16px;color:rgb(var(--fg)/.78);text-align:center}
+.place{margin:2px 0 0;font-size:14px;color:rgb(var(--fg)/.56);text-align:center}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:16px;padding:6px 14px;border-radius:999px;
+  border:1px solid rgb(var(--fg)/.16);font-size:13.5px;color:rgb(var(--fg)/.82);background:rgb(var(--fg)/.04)}
+.status__dot{width:7px;height:7px;border-radius:50%;background:var(--insp);flex:none}
+.status.is-open .status__dot{background:#9DBF9E;box-shadow:0 0 0 4px rgba(157,191,158,.16)}
+
+.links{list-style:none;margin:30px 0 0;padding:0;width:100%;display:flex;flex-direction:column;gap:12px}
+.link{display:grid;grid-template-columns:44px minmax(0,1fr) 20px;align-items:center;gap:14px;min-height:66px;padding:10px 16px 10px 14px;
+  border-radius:14px;border:1px solid rgb(var(--fg)/.18);background:rgb(var(--fg)/.035);
+  transition:background-color .3s var(--ease),border-color .3s var(--ease),transform .35s var(--ease)}
+.link:hover{background:rgb(var(--fg)/.08);border-color:rgb(var(--fg)/.4);transform:translateY(-2px)}
+.link:active{transform:scale(.985)}
+.link__icon{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgb(var(--fg)/.07)}
+.link__icon svg{width:22px;height:22px}
+.link__text{display:flex;flex-direction:column;min-width:0}
+.link__ar{font-size:17.5px;font-weight:700;line-height:1.45}
+.link__en{font-family:var(--en);font-size:10px;letter-spacing:.2em;text-transform:uppercase;direction:ltr;text-align:right;
+  color:rgb(var(--fg)/.5);line-height:1.5}
+.link__arrow{width:18px;height:18px;opacity:.55;transition:transform .35s var(--ease),opacity .3s}
+.link:hover .link__arrow{transform:translateX(-4px);opacity:1}
+
+.link--main{background:var(--purity);color:var(--navy);border-color:var(--purity);min-height:74px}
+.link--main:hover{background:#fff;border-color:#fff}
+.link--main .link__icon{background:rgba(26,37,56,.08)}
+.link--main .link__en{color:rgba(26,37,56,.55)}
+
+.foot{margin-top:auto;padding-top:38px;text-align:center;font-size:12.5px;color:rgb(var(--fg)/.42)}
+
+/* entrance: visible by default, hidden only while the animation runs */
+.rise{animation:rise .95s var(--ease) both;animation-delay:var(--d,0s)}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}.link,.link__arrow{transition:none}}
+@media (max-width:360px){.logo{height:112px}.link__ar{font-size:16.5px}}
+</style>
+</head>
+<body>
+<main class="page">
+  <img class="logo rise" src="../assets/img/logo-lockup-white.svg" alt="شعار حَلاوة رُوح" width="284" height="294">
+  <p class="lead rise" style="--d:.08s">قهوة مختصة · حلا · مخبوزات</p>
+  <p class="place rise" style="--d:.12s">مكة المكرمة، الشرائع الخضراء</p>
+  <p class="status rise" style="--d:.16s" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>يوميًا من ٦ صباحًا إلى ١٢ منتصف الليل</span></p>
+
+  <ul class="links">
+    <li class="rise" style="--d:.22s">
+      <a class="link link--main" href="https://rouhmenu.onrender.com/" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h13v4.5A5.5 5.5 0 0 1 11.5 20h-2A5.5 5.5 0 0 1 4 14.5z"/><path d="M17 11.5h1.5a2.5 2.5 0 0 1 0 5H16.6"/><path d="M8.5 3.5c-.8 1 .8 2 0 3M12.5 3.5c-.8 1 .8 2 0 3"/></svg></span>
+        <span class="link__text"><span class="link__ar">المنيو</span><span class="link__en">Menu</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+    <li class="rise" style="--d:.28s">
+      <a class="link" href="https://share.google/GPg58z07YhiyOE0V4" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+        <span class="link__text"><span class="link__ar">موقعنا على الخريطة</span><span class="link__en">Location</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+    <li class="rise" style="--d:.34s">
+      <a class="link" href="https://wa.me/966565642255" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.6 18.6z"/><path d="M9.2 8.6c.2-.4.6-.4.8-.1l.8 1.6c.1.3 0 .5-.2.7l-.4.4c.4 1 1.3 1.9 2.3 2.3l.4-.4c.2-.2.4-.3.7-.2l1.6.8c.3.2.3.6-.1.8-.6.5-1.4.8-2.2.5-2-.7-3.6-2.3-4.3-4.3-.3-.8 0-1.6.6-2.1z"/></svg></span>
+        <span class="link__text"><span class="link__ar">واتساب</span><span class="link__en">WhatsApp</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+    <li class="rise" style="--d:.40s">
+      <a class="link" href="https://www.instagram.com/rouh.sweet/" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".6" fill="currentColor"/></svg></span>
+        <span class="link__text"><span class="link__ar">انستقرام</span><span class="link__en">Instagram</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+    <li class="rise" style="--d:.46s">
+      <a class="link" href="https://www.tiktok.com/@rouh.sweet" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4v10.8a3.3 3.3 0 1 1-3.3-3.3"/><path d="M13.5 4c.4 2.6 2.4 4.4 5 4.6"/></svg></span>
+        <span class="link__text"><span class="link__ar">تيك توك</span><span class="link__en">TikTok</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+    <li class="rise" style="--d:.52s">
+      <a class="link" href="https://www.snapchat.com/add/rouh.sweet" target="_blank" rel="noopener">
+        <span class="link__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5c-2.9 0-4.8 2.1-4.8 5v2.2l-1.5.6c-.4.2-.4.6 0 .8l1.3.6c-.5 1.4-1.5 2.5-2.9 3-.4.1-.4.6 0 .7l1.5.5.3 1.2 1.8-.2c.8 0 1.5.5 2.4 1.1.6.4 1.2.6 1.9.6s1.3-.2 1.9-.6c.9-.6 1.6-1.1 2.4-1.1l1.8.2.3-1.2 1.5-.5c.4-.1.4-.6 0-.7-1.4-.5-2.4-1.6-2.9-3l1.3-.6c.4-.2.4-.6 0-.8l-1.5-.6V8.5c0-2.9-1.9-5-4.8-5z"/></svg></span>
+        <span class="link__text"><span class="link__ar">سناب شات</span><span class="link__en">Snapchat</span></span>
+        <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+      </a>
+    </li>
+  </ul>
+
+  <p class="foot rise" style="--d:.6s">© ٢٠٢٦ حَلاوة رُوح</p>
+</main>
+
+<script>
+/* open now? Makkah time, daily 6:00 am to midnight */
+(function () {
+  try {
+    var parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Riyadh', hour: 'numeric', hourCycle: 'h23' }).formatToParts(new Date());
+    var hour = +parts.find(function (p) { return p.type === 'hour'; }).value;
+    var open = hour >= 6;
+    var box = document.querySelector('[data-status]');
+    box.classList.toggle('is-open', open);
+    box.querySelector('[data-status-text]').textContent = open
+      ? 'مفتوح الآن · حتى ١٢ منتصف الليل'
+      : 'مغلق الآن · نفتح ٦ صباحًا';
+  } catch (e) { /* keep the static hours text */ }
+})();
+</script>
+</body>
+</html>
